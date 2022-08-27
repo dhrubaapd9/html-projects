@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'DynaPuff', cursive;
+           
+        
+           
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>DJ's Survey Form</h1>
+    </div>
+    <main>
+        <div>
+            <p>Thank you for taking the time to help us improve the platform</p>
+            <form action="backend.php"></form>
+            <div>
+                <div>
+                    <label for="">Name:</label>
+                    <input type="text" placeholder="First Name" required> <input type="text" placeholder="Last Name" required>
+                </div>
+                <div>
+
+                    <label for="">Email:</label>
+                    <input type="text" placeholder="Email Id" required>
+                </div>
+                <div>
+                    <label for="">Age(Optional):</label>
+                    <input type="number" placeholder="Age " min="10" max="99">
+
+                </div>
+                <fieldset>
+                    <legend>Which option best describes your current role?</legend>
+        
+                    <select name="role" id="role">
+
+                        <option disabled selected value="">Current Role</option>
+                        <option value="Student">Student</option>
+                        <option value="Full time job">Full time job</option>
+                        <option value="Full time Learnert">Full time Learnert</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Would you recommend Dj to a friend?</legend>
+                    <input type="radio" id="yes" name="cj" checked>
+                    <label for="yes">Definetly</label>
+                    <input type="radio" id="ok" name="cj">
+                    <label for="ok">Maybe</label>
+                    <input type="radio" id="no" name="cj">
+                    <label for="no">Not sure</label>
+                    
+                </fieldset>
+                <div>
+                    <p>What is your favorite feature of DjCamp?</p>
+                    <select name="" id="">
+                        <option disabled selected value="">Select an option</option>
+                        <option value="">Project</option>
+                        <option value="">Community</option>
+                        <option value="">open Sorce</option>
+                    </select>
+                    <div>
+                        <p>What would you like to see improved? (Check all that apply)</p>
+                        <input type="checkbox" name="ark" id="fn">
+                        <label for="fn">Front-end Projects</label>
+                        <input type="checkbox" name="ark" id="bn">
+                        <label for="bn">Back-end Projects</label>
+                        <input type="checkbox" name="ark" id="dv">
+                        <label for="dv">Data Visualization </label>
+                        <input type="checkbox" name="ark" id="oc">
+                        <label for="oc">Open Source Community </label>
+                        <input type="checkbox" name="ark" id="acark">
+                        <label for="acark">Additional Courses</label>
+                    </div>
+                    <div>
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="" id="" cols="40" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button>submit-button</button> <button type="reset">reset</button>
+                    </div>
+                
+                </div>
+                
+            </div>
+    </main>
+
+
+</body>
+
+</html>
